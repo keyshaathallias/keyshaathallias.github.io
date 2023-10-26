@@ -1,0 +1,230 @@
+body {
+    font-family: 'montserrat', sans-serif;
+	font-size: 18px;
+    color: #444F33 !important;
+	background-image: linear-gradient(to bottom right, #f5f5dc, #f3e5ab, #f5f5dc);
+	padding: 0 7%;
+	margin: 0;
+}
+
+.navbar {
+	border-radius: 50px;
+	background-image: linear-gradient(to bottom right, #87986A, #97A97C);
+	opacity: 80%;
+	width: fit-content;
+	display: flex;
+  	text-align: center;
+  	justify-content: center;
+  	align-items: center;
+	margin: 20px auto;
+	position: fixed;
+	z-index: 9999;
+}
+
+.navbar-name {
+    font-weight: bold;
+    text-decoration: none;
+    color: #444F33;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: white !important;
+	padding: 0 7%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navbar-nav {
+	display: flex;
+  	justify-content: center; /* Mengatur teks ke tengah secara horizontal */
+  	align-items: center; /* Mengatur teks ke tengah secara vertikal */
+  	height: 100%; /* Sesuaikan tinggi navbar sesuai kebutuhan */
+}
+/* 
+.nav-link:hover {
+	background-color: #72805e;
+	border-radius: 50px;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	transition: 0.3s;
+} */
+
+.nav-link::after {
+	content: '';
+	display: block;
+	padding-bottom: 2px;
+	border-bottom: 0.1rem solid rgba(255, 255, 255, 0.50);
+	border-radius: 100px;
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+
+.nav-link:hover::after {
+	transform: scaleX(0.5);
+}
+.nav-link:hover {
+	background-color: #72805e;
+	border-radius: 50px;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	transition: 0.3s;
+}
+
+.fixed-top {
+	position: fixed; /* Tetapkan posisi elemen ke 'fixed' */
+	top: 0; /* Atur elemen ke bagian atas layar */
+	z-index: 1000; /* Tetapkan z-index agar navbar selalu di atas konten lain */
+	background-color: #ffffff; /* Warna latar belakang navbar (sesuaikan dengan warna yang Anda inginkan) */
+  }
+  
+
+#hero {
+	min-height: 100vh; /* Ini akan mengatur tinggi elemen "hero" setidaknya seukuran tinggi viewport (100% tinggi layar) */
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	color: #444F33;
+	font-size: 60px;
+	padding: 0;
+	font-weight: bold;
+}
+
+.hi {
+	font-family: 'Dancing Script', cursive;
+	font-size: 100px;
+}
+.name {
+	margin-top: -15px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+	margin-top: 110px;
+}
+
+.star-two {
+    width: 55px;
+    height: auto;
+	margin-top: -490px;
+	margin-left: 90px;
+}
+.star {
+    width: 70px;
+	margin-top: -280px;
+	margin-left: 390px;
+}
+
+h1:nth-child(1) {
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between; /* Menempatkan foto profil di pojok kanan */
+	align-items: center; /* Menjaga elemen tetap sejajar secara vertikal */
+}
+  
+.profile-picture {
+	width: 350px;
+	height: auto;
+	margin-top: 45px;
+}
+
+/* Tambahkan ini ke dalam berkas CSS Anda */
+.arrow-icon {
+	font-size: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+	animation: bounce 2s infinite; /* Atur animasi bounce dengan durasi 2 detik dan berulang tak terbatas */
+  }
+  
+  /* Definisikan animasi "bounce" */
+  @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0); /* Posisi awal atau akhir (tidak bergerak) */
+	}
+	40% {
+	  transform: translateY(-20px); /* Posisi tengah, pindahkan ke atas sejauh 20px */
+	}
+	60% {
+	  transform: translateY(-10px); /* Posisi tengah, pindahkan ke atas sejauh 10px */
+	}
+  }
+  
+/* ABOUT */
+#about {
+	margin: 70px;
+	height: 100vh;
+}
+
+.heading {
+	margin: 0;
+}
+
+.picture {
+	width: 350px;
+	height: auto;
+	margin-top: 45px;
+	display: flex;
+  	text-align: right;
+  	justify-content: right;
+  	align-items: start;
+	margin-top: 0;
+}
+
+.desc {
+	text-align: justify;
+	font-size: 20px;
+}
+
+/* EDUCATION */
+#education {
+	height: 100vh;
+}
+
+/* SKILLS */
+#skills {
+	height: 100vh;
+}
+
+/* PROJECT */
+#project {
+	height: 100vh;
+}
+
+/* CONTACT */
+#contact {
+	height: 100vh;
+}
+
+
+/* Media Queries */
+/* Laptop */
+@media (max-width:1366px){
+	html {
+		font-size: 75%;
+	}
+}
+
+/* Tablet */
+@media (max-width:768px){
+	html {
+		font-size: 62.5%;
+	}
+}
+
+/* Mobile Phone */
+@media (max-width:450px){
+	html {
+		font-size: 55%;
+	}
+}

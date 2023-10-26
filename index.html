@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keysha's Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/k.png" type="image/x-icon" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <img src="img/star-1.svg" alt="star" class="stars star-top" />
+        <h1>Hi! I'm Keysha.</h1>
+        <h1>A Student</h1>
+        <h2>at SMKN 4 Tangerang.</h2>
+        <img src="img/star-1.svg" alt="star" class="stars star-bottom" />
+        <p>
+          I'm passionate about website developing, designing, illustrating, and
+          more.
+        </p>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>A</span>bout Me...</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/key.png" alt="Profile Picture" />
+        </div>
+        <div class="content">
+          <p>
+            <span>Hi,</span> my name is Keysha Athallia Sukandar and i go by
+            Keysha, or Key as my nickname. I'm 16 years old and was born on
+            March 22, 2007, in Jakarta. I've lived in Tangerang ever since i was
+            a kid.
+          </p>
+          <p>
+            <span>I</span>'m a student and currently attending SMKN 4 Tangerang,
+            I study software engineer. I'm passionate about web developing,
+            designing, drawing, digital illustrating, and 3D modelling.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('biodata')">
+              Biodata
+            </p>
+            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+          </div>
+          <div class="tab-contents active-tab" id="biodata">
+            <ul>
+              <li><span>Full Name :</span> Keysha Athallia Sukandar</li>
+              <li><span>Age :</span> 16 years old</li>
+              <li><span>Gender :</span> Female</li>
+              <li><span>Birthdate :</span> March 22, 2007</li>
+              <li><span>Religion :</span> Islam</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li><i class="bi bi-pencil"></i> Drawing</li>
+              <li><i class="bi bi-pen"></i> Journaling</li>
+              <li><i class="bi bi-book"></i> Reading</li>
+              <li><i class="bi bi-laptop"></i> Designing</li>
+              <li><i class="bi bi-brush"></i> Digital Illustrating</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section End -->
+
+    <!-- Education Section Start -->
+    <section id="education" class="education">
+      <h2><span>E</span>ducation</h2>
+      <div class="timeline">
+        <div class="container left-container">
+          <img src="img/sd.png" alt="SD" />
+          <div class="text-box">
+            <h3>SDN Petir 01 Tangerang</h3>
+            <small>2013 - 2019</small>
+            <p>
+              In elementary school, my passion for drawing and designing began
+              to take root.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container right-container">
+          <img src="img/smpn_32-removebg-preview.png" alt="SMP" />
+          <div class="text-box">
+            <h3>SMPN 32 Tangerang</h3>
+            <small>2019 - 2022</small>
+            <p>
+              In junior high school, I continued to develop my skills in drawing
+              and designing while also focusing on my studies.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container left-container">
+          <img src="img/Logo SMKN 4 Tangerang.png" alt="SMKN" />
+          <div class="text-box">
+            <h3>SMKN 4 Tangerang</h3>
+            <small>2022 - 2025</small>
+            <p>
+              In vocational high school, I am studying software engineering
+              while continuing to develop my skills in drawing and designing. I
+              am also exploring new areas like digital illustrating, animating,
+              and 3D modeling.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section End -->
+
+    <!-- Skills Section Start -->
+    <section id="skills" class="skills">
+      <h2><span>S</span>kills</h2>
+      <p>
+        Here are the percentages representing my level of expertise in
+        programming languages, software design, and the languages I can speak.
+      </p>
+      <div class="container-lang">
+        <h4><span>P</span>rogramming Languages</h4>
+        <div class="languages">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60%" style="max-width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="65%" style="max-width: 65%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="35%" style="max-width: 35%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="30%" style="max-width: 30%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-design">
+        <h4><span>D</span>esigning &nbsp; <span>S</span>oftwares</h4>
+        <div class="editing">
+          <div class="skill">
+            <div class="skill-name">Canva</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="95%" style="max-width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Krita</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="85%" style="max-width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Blender</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="40%" style="max-width: 40%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Corel Draw</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60%" style="max-width: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-design">
+        <h4><span>L</span>anguages</h4>
+        <div class="editing">
+          <div class="skill">
+            <div class="skill-name">Bahasa Indonesia</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="80%" style="max-width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">English</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60%" style="max-width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">French</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="10%" style="max-width: 10%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section End -->
+
+    <!-- Project Section Start -->
+    <section id="project" class="project">
+      <h2>My Portfolio</h2>
+      <h4><span>I</span>llustrations and <span>P</span>osters</h4>
+      <p>made in Krita and Corel Draw</p>
+      <div class="container-slides" id="slider-illustration">
+        <div class="slider-wrapper">
+          <div class="poster-container">
+            <button id="prev-slide" class="slide-button">
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+
+            <div class="image-list">
+              <img
+                src="img/let's save our earth poster.jpg"
+                alt="img-1"
+                class="image-item"
+              />
+              <img
+                src="img/luna n dragon finished.jpg"
+                alt="img-2"
+                class="image-item"
+              />
+              <img src="img/Poster.jpg" alt="img-5" class="image-item" />
+              <img
+                src="img/struktur kelas xi pplg dua.jpg"
+                alt="img-4"
+                class="image-item"
+              />
+              <img
+                src="img/poster band school222.jpg"
+                alt="img-3"
+                class="image-item"
+              />
+            </div>
+            <button id="next-slide" class="slide-button">
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div class="slider-scrollbar" id="scrollbar-illustration">
+          <div class="scrollback-track">
+            <div class="scrollback-thumb"></div>
+          </div>
+        </div>
+      </div>
+      <h4>3D Modelin<span>g</span></h4>
+      <p>made in Blender</p>
+      <div class="container-slides" id="slider-3d">
+        <div class="slider-wrapper">
+          <div class="poster-container">
+            <button id="prev-slide" class="slide-button slider-button">
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+
+            <div class="image-list">
+              <img src="img/rumah.png" alt="img-1" style="width: 600px" />
+              <img src="img/kitchen.png" alt="img-2" style="width: 345px" />
+            </div>
+            <button id="next-slide" class="slide-button">
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div class="slider-scrollbar" id="scrollbar-3d">
+          <div class="scrollback-track">
+            <div class="scrollback-thumb"></div>
+          </div>
+        </div>
+      </div>
+      <h4><span>A</span>nimation</h4>
+      <p>made in Krita and Canva</p>
+      <div class="container-slides" id="slider-animation">
+        <div class="slider-wrapper">
+          <div class="poster-container">
+            <button id="prev-slide" class="slide-button">
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+            <div class="image-list">
+              <video width="400" controls muted autoplay loop>
+                <source
+                  src="video/ice cream ads2.mp4"
+                  type="video/mp4"
+                  style="border-radius: 10px"
+                />
+              </video>
+              <video width="400" controls muted autoplay loop>
+                <source
+                  src="video/Tugas Animasi 17 Agustus.mp4"
+                  type="video/mp4"
+                  style="border-radius: 10px"
+                />
+              </video>
+              <video width="400" controls muted autoplay loop>
+                <source
+                  src="video/Animasi Petualangan Siklus Air.mp4"
+                  type="video/mp4"
+                  style="border-radius: 10px"
+                />
+              </video>
+            </div>
+
+            <button id="next-slide" class="slide-button">
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div class="slider-scrollbar" id="scrollbar-animation">
+          <div class="scrollback-track">
+            <div class="scrollback-thumb"></div>
+          </div>
+        </div>
+      </div>
+
+      <h4>
+        My &nbsp;&nbsp;<span>A</span>chievement and
+        &nbsp;&nbsp;<span>C</span>ertificate<span></span>
+      </h4>
+      <div class="container-slides" id="slider-achievement">
+        <div class="slider-wrapper">
+          <div class="poster-container">
+            <button id="prev-slide" class="slide-button">
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+            <div class="image-list">
+              <img src="img/Score TOEIC.jpg" alt="" style="width: 600px" />
+              <img
+                src="img/Sertifikat Bromits - Keysha Athallia Sukandar (1)_page-0001.jpg"
+                alt=""
+                style="width: 390px"
+              />
+              <img
+                src="img/Skilvul-SkilBadge-HTML Dasar (1)_page-0001.jpg"
+                alt=""
+                style="width: 400px"
+              />
+              <img
+                src="img/Skilvul-SkilBadge-CSS Dasar_page-0001.jpg"
+                alt=""
+                style="width: 400px"
+              />
+              <img
+                src="img/Sertifikat LED KEYSHA ATHALLIA SUKANDAR_page-0001.jpg"
+                alt=""
+                style="width: 400px"
+              />
+              <img
+                src="img/sertifikat webinar sextortion.jpg"
+                alt=""
+                style="width: 400px"
+              />
+            </div>
+
+            <button id="next-slide" class="slide-button">
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div class="slider-scrollbar" id="scrollbar-achievement">
+          <div class="scrollback-track">
+            <div class="scrollback-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section End -->
+
+    <!-- services section start -->
+    <section id="services" class="services">
+      <div classf="container-services">
+        <h2>My Service<span>s</span></h2>
+        <div class="services-list">
+          <div>
+            <i class="bi bi-code-slash"></i>
+            <h3>Web Design</h3>
+            <p>
+              I can design websites using Figma, and I can also build basic
+              websites using HTML, CSS, and JavaScript.
+            </p>
+            <button class="order-button">Order</button>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+          <div>
+            <i class="bi bi-pen"></i>
+            <h3>Illustration</h3>
+            <p>
+              I can create illustrations for posters, children's books,
+              character designs, Instagram feeds, self-portraits, and more.
+            </p>
+            <button class="order-button">Order</button>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+          <div>
+            <i class="bi bi-vector-pen"></i>
+            <h3>Graphic Design</h3>
+            <p>
+              I can design graphics for posters, illustrations, banners,
+              infographics, sticker designs, Instagram feeds, and more.
+            </p>
+            <button class="order-button">Order</button>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2>Contact Me!</h2>
+      <div class="row">
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+              style="resize: none"
+            ></textarea>
+            <button type="submit" class="submit-button">Send</button>
+          </form>
+        </div>
+        <div class="contact-left">
+          <p>
+            <i class="bi bi-envelope-open-heart-fill"></i
+            >keyshaathallias@gmail.com
+          </p>
+          <p><i class="bi bi-telephone"></i>085156536864</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.90879105235481!2d106.7045196279266!3d-6.192159555687962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9c6409f5add%3A0x2e800bfeaf885d88!2sGg.%20Al-Furqon%2C%20RT.004%2FRW.002%2C%20Petir%2C%20Kec.%20Cipondoh%2C%20Kota%20Tangerang%2C%20Banten!5e0!3m2!1sen!2sid!4v1697301193570!5m2!1sen!2sid"
+            class="map"
+          ></iframe>
+          <div class="sosmed-icons">
+            <a href="https://www.instagram.com/keyshaathallias/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/keysha-athallia-417a23281/"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://open.spotify.com/user/90xzwnn31seuo7837e91dpfmq?si=62768000672148e2"
+              ><i class="bi bi-spotify"></i
+            ></a>
+            <a href="https://www.youtube.com/@helloloading"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/keyshaathallias/"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/keysha-athallia-417a23281/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/user/90xzwnn31seuo7837e91dpfmq?si=62768000672148e2"
+          ><i class="bi bi-spotify"></i
+        ></a>
+        <a href="https://www.youtube.com/@helloloading"
+          ><i class="bi bi-youtube"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Keysha Athallia S.</a> | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!--JavaScript-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
