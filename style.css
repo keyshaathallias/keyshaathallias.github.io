@@ -1061,45 +1061,54 @@ footer .credit a {
     }
 }
 /* handphone */
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 411px)  {
     html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     #menu {
         display: flex;
         text-align: center;
-        justify-content: right;
-        align-items: end;
-        margin: auto;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0 30px;
     }
 
     .navbar .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: -600%;
-        object-position: right;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        
         background-color: #444F33;
-        width: 30rem;
+        width: 70%;
+        max-width: 300px;
         height: 100vh;
         transition: 0.4s;
+        z-index: 999;
     }
 
     .navbar .navbar-nav.active {
-        right: -260%;
+        right: 0;
     }
 
     .navbar .navbar-nav a {
         display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
+        
+        padding: 1rem 0;
+        font-size: 1.4rem;
         transition: 0.2s linear;
         text-align: center;
     }
 
     .navbar .navbar-nav a:hover {
         color: #ffffc5;
-        display: block;
+        
     }
 
     .navbar .navbar-nav a::after {
@@ -1112,72 +1121,114 @@ footer .credit a {
     }
 
     .hero {
-        width: 20px;
+        width: 100%;
+        text-align: center; /* Pusatkan konten */
+        padding: 0 15px; /* Tambahkan padding untuk tetap proporsional */
+        position: relative;
     }
-    .hero .content h1:nth-child(2) {
-        font-size: 28px;
-        text-align: center;
-        margin-right: 180px;
+    .hero .background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
     }
-    .hero .content h1 {
-        font-size: 22px;
-        text-align: center;
-        margin-right: 180px;
+    .hero .content {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative; /* Tambahkan properti position */
+        z-index: 1; /* Letakkan konten di depan background */
     }
 
-    .hero .content h2 {
-        font-size: 22px;
-        text-align: center;
-        margin-right: 180px;
-    }
-
+    .hero .content h1:nth-child(2),
+    .hero .content h1,
+    .hero .content h2,
     .hero .content p {
-        font-size: 16px;
-        text-align: center;
-        margin-bottom: 70px;
-        margin-right: 190px;
+        font-size: 18px; /* Sesuaikan ukuran font */
+        margin: 10px 0;
+    }
+    .star-bottom {
+        display: hidden;
+      }
     }
     .about .row {
-        flex-wrap: wrap; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .about .row .about-img img {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        margin-top: 80px;
+        width: 100%; /* Ensure responsiveness */
+        height: auto;
+        display: block;
+        margin: 20px 0; /* Adjust margins */
     }
 
     .about .row .content {
-        padding: 0;
+        padding: 3px 0;
+        text-align: justify;
     }
 
     .about .row .content p {
-        margin-top: 1rem;
+        margin-top: 20px;
         font-size: 16px;
+        text-align: justify;
+        
     }
 
-    .education{
-        width: 60vh;
+    .education {
+        width: 100%;
+        padding: 0 15px; /* Sesuaikan padding */
+        text-align: left; /* Atur teks agar rata kiri */
     }
 
     .education .left-container {
-        width: 200px;
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
     }
 
     .skills > p {
-        font-size: 12px;
-        width: 200px;
+        font-size: 16px; /* Adjusted font size */
+        margin: 10px 0;
         text-align: center;
     }
 
     .slider-wrapper .image-list .image-item {
-        width: 300px;
+        width: 180px;
+        padding-left: 10px;
     }
-
+    .image-list img {
+        width: 180px !important;
+    }
+    .image-list .cottage {
+        width: 250px !important;
+    }
+    .image-list .kitchen {
+        width: 148px !important;
+    }
+    .image-list .toeic {
+        width: 350px !important;
+    }
+    .image-list .sertif {
+        width: 230px !important;
+    }
+    .image-list video {
+        width: 250px !important;
+    }
+    .slider-wrapper .image-list .image-item p {
+        font-size: 14px; /* Sesuaikan ukuran font agar lebih kecil */
+        margin: 5px 0; /* Sesuaikan margin untuk tampilan yang lebih rapi */
+    }
+    .slider-wrapper .image-list .image-item img {
+        width: 100%; /* Menyesuaikan ukuran gambar agar responsif */
+        height: auto; /* Memastikan gambar tidak terlalu besar */
+    }
     .sosmed-icons {
         display: flex;
-        font-size: 20px;
+        font-size: 24px; /* Increased for better touch interaction */
+        justify-content: center;
     }
 
     .contact .row {
@@ -1185,26 +1236,21 @@ footer .credit a {
     }
 
     .map {
-        display: flex;
-        margin-top: 2rem;
+        margin: 20px 0;
         background-color: #97A97C;
         border-radius: 8px;
         box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
         padding: 10px;
-        flex-wrap: wrap;
-        margin-right: 20px;
         width: 100%;
-        height: 232px;
+        height: auto;
     }
 
     .contact .row .map {
-        flex: 1 1 45rem;
+        flex: 1 1 100%;
     }
 
     .container-contact {
-        margin-top: 2rem;
-        display: flex;
-        background-color: #f3e5ab;
+        margin-top: 20px;
         border-radius: 8px;
         box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
         width: 100%;
