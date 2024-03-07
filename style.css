@@ -227,10 +227,10 @@ body {
     flex: 1 1 37rem;
     margin: auto;
 }
-
+/* 
 .about .row .about-img img {
-    width: 100%;
-}
+    width: 50% !important;
+} */
 
 .about .row .content {
     margin-left: 20px;
@@ -524,7 +524,7 @@ body {
 }
 .skills p {
     font-size: 16px;
-    width: 60%;
+    width: 100%;
     margin: auto;
     text-align: center;
     margin-bottom: 30px;
@@ -619,7 +619,9 @@ body {
 }
 .slider-wrapper .slide-button#prev-slide {
     margin: 10px; /* Add some spacing between the button and posters */
-    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slider-wrapper .slide-button#next-slide {
     margin: 10px;
@@ -889,6 +891,8 @@ body {
     margin-top: 15px;
     font-size: 16px;
     width: fit-content;
+    display: flex;
+    align-items: center;
 }
 .contact-left p i{
     color: #444F33;
@@ -1159,10 +1163,10 @@ footer .credit a {
     }
 
     .about .row .about-img img {
-        width: 100%; /* Ensure responsiveness */
+        width: 40%; /* Ensure responsiveness */
         height: auto;
         display: block;
-        margin: 20px 0; /* Adjust margins */
+        margin: 20px auto; /* Adjust margins */
     }
 
     .about .row .content {
@@ -1184,7 +1188,7 @@ footer .credit a {
     }
 
     .education .left-container {
-        width: 100%;
+        /* width: 100%; */
         max-width: 100%;
         text-align: left;
     }
