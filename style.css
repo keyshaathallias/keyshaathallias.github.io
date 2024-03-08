@@ -124,6 +124,7 @@ body {
     content: '';
     display: block;
     position: absolute;
+    left: 0;
     width: 100%;
     height: 30%;
     bottom: 0;
@@ -131,7 +132,7 @@ body {
 }
 
 .hero .content {
-    padding: 1.4rem 7%;
+    padding: 1.4rem 7% 3rem 7%;
     max-width: 80rem;
     justify-content: center;
     align-items: center;
@@ -217,6 +218,7 @@ body {
 }
 
 .about .row {
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     display: flex !important;
@@ -224,17 +226,17 @@ body {
 }
 
 .about .row .about-img {
-    flex: 1 1 37rem;
+    /* flex: 1 1 37rem; */
     margin: auto;
 }
 
 .about .row .about-img img {
-    width: 50% !important;
+    width: 38% !important;
 }
 
 .about .row .content {
     margin-left: 20px;
-    flex: 1 1 50rem;
+    /* flex: 1 1 50rem; */
     padding: 0 1rem;
 }
 
@@ -257,7 +259,7 @@ body {
     margin: 20px 0 20px;
 }
 .tab-links {
-    margin-right: 80px;
+    margin-right: 35px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -631,6 +633,7 @@ body {
     align-items: center;
 }
 .slider-wrapper .image-list {
+    margin-top: 15px;
     display: grid;
     gap: 10px;
     font-size: 0;
@@ -869,6 +872,7 @@ body {
 .contact {
     padding: 7rem 7% 1.4rem;
     display: inline-block;
+    width: 100%;
 }
 .contact .row{
     display: flex;
@@ -1006,7 +1010,7 @@ footer {
     background-image: linear-gradient(to bottom right, rgba(135, 152, 106, 0.9), rgba(143, 168, 110, 0.9));
     text-align: center;
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin-top: 3rem;
 }
 
@@ -1050,7 +1054,8 @@ footer .credit a {
         font-size: 75% !important;
     }
     .contact-left{
-    width: 50% ;
+        margin-top: 18px;
+    width: 100% ;
     }
     
 
@@ -1086,10 +1091,18 @@ footer .credit a {
         margin: 0;
         padding: 0 10px;
     }
+    .contact-right {
+        margin-right: 0px;
+    }
     .navbar {
         height: 45px !important;
     }
+    .about .row .content {
+        margin-left: 0px;
+        padding: 0 1rem;
+    }
     .star-top {
+        width: 5rem;
         opacity: 0;
         margin-left: 150px !important;
         margin-top: 50px !important;
@@ -1126,7 +1139,37 @@ footer .credit a {
         color: #ffffc5;
         
     }
-
+    .skill-per::before {
+        display: none;
+    }
+    .skill-per::after {
+       display: none;
+    }
+    .skill-per:hover::before {
+        display: block;
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #97A97C;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+    }
+    .skill-per:hover::after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #97A97C;
+        top: -18px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
     .navbar .navbar-nav a::after {
         content: '';
         display: block;
@@ -1159,15 +1202,29 @@ footer .credit a {
     }
 
     .hero .content h1:nth-child(2),
-    .hero .content h1,
-    .hero .content h2,
-    .hero .content p {
-        font-size: 18px; /* Sesuaikan ukuran font */
+    .hero .content h1{
+        font-size: 28px !important; /* Sesuaikan ukuran font */
         margin: 10px 0;
     }
+    .hero .content h2{
+        font-size: 14px !important; /* Sesuaikan ukuran font */
+        margin: 10px 0;
+    }
+    .hero .content p {
+        font-size: 12px !important; /* Sesuaikan ukuran font */
+        margin: 10px 0;
+    }
+    h2 {
+        font-size: 28px !important;
+    }
+    h2 span{
+        font-size: 40px !important;
+    }
+
     .star-bottom {
-        display: hidden;
-      }
+        position: absolute;
+        left: -.8rem;
+        width: 4rem;
     }
     .about .row {
         flex-direction: column;
@@ -1249,6 +1306,10 @@ footer .credit a {
 
     .contact .row {
         flex-direction: column;
+    }
+
+    .education {
+       display: none;
     }
 
     .map {
