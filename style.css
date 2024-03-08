@@ -1349,3 +1349,10 @@ footer .credit a {
         height: auto;
     }
 }
+
+.kanan{
+    margin-left: 120px !important;
+}
+.kiri{
+    margin-right: 120px !important;
+}

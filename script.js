@@ -123,3 +123,18 @@ window.addEventListener("load", () => {
   initSlider("slider-animation", "scrollbar-animation", "slide-button");
   initSlider("slider-achievement", "scrollbar-achievement", "slide-button");
 });
+
+let btn = document.getElementById("kabur");
+let s = true
+btn.addEventListener("mouseenter", function(){
+  if (s == true) {
+    s = false
+    btn.classList.add("kanan")
+    btn.classList.remove("kiri")
+  }else{
+    s=true
+    btn.classList.remove("kanan")
+    btn.classList.add("kiri")
+  }
+})
+console.log(btn);
