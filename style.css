@@ -1073,7 +1073,7 @@ footer .credit a {
     }
 }
 /* handphone */
-@media screen and (max-width: 411px)  {
+@media screen and (max-width: 460px)  {
     html {
         scroll-behavior: smooth;
         overflow-x: hidden;
