@@ -449,7 +449,7 @@ body {
     font-family: brice-r;
     color: #5c6b45;
     margin-bottom: 15px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     text-align: center;
 }
 
@@ -824,6 +824,9 @@ body {
     margin-top: 20px;
     display: inline-block;
 } */
+.timeline-mobile{
+    display: none;
+}
 .services .services-list h3 {
     font-weight: 700;
     font-size: 25px;
@@ -1054,11 +1057,8 @@ footer .credit a {
         font-size: 75% !important;
     }
     .contact-left{
-        margin-top: 18px;
-    width: 100% ;
+        width: 100% ;
     }
-    
-
 }
 @media (max-width: 991px) {
     html {
@@ -1091,10 +1091,25 @@ footer .credit a {
         margin: 0;
         padding: 0 10px;
     }
+    .timeline-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .timeline-mobile .text-box{
+        color: white;
+    }
+    .timeline-mobile .text-box p{
+        text-align: center;
+    }
     .contact-right {
         margin-right: 0px;
     }
+    .contact-left {
+        margin-top: 20px;
+    }
     .navbar {
+	    margin: 0 15px 0 auto;
         height: 45px !important;
     }
     .about .row .content {
@@ -1104,8 +1119,8 @@ footer .credit a {
     .star-top {
         width: 5rem;
         opacity: 0;
-        margin-left: 150px !important;
-        margin-top: 50px !important;
+        margin: 50px 18px 0 auto !important;
+        /* margin-top: 50px !important; */
         animation: blink 1.5s ease-in-out infinite;
     }
 
@@ -1256,6 +1271,10 @@ footer .credit a {
         text-align: left; /* Atur teks agar rata kiri */
     }
 
+    .timeline{
+       display: none;
+    }
+
     .education .left-container {
         /* width: 100%; */
         max-width: 100%;
@@ -1306,10 +1325,6 @@ footer .credit a {
 
     .contact .row {
         flex-direction: column;
-    }
-
-    .education {
-       display: none;
     }
 
     .map {
