@@ -124,7 +124,7 @@ window.addEventListener("load", () => {
   initSlider("slider-achievement", "scrollbar-achievement", "slide-button");
 });
 
-let btn = document.getElementById("kabur");
+const btn = document.getElementById("kabur");
 let s = true
 btn.addEventListener("mouseenter", function(){
   if (s == true) {
